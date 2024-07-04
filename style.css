@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.body {
+    height: 100vh;
+    background: linear-gradient(120deg, #e93cef, #b7dce8, #ec7daf);
+}
+
+.head {
+    height: 19vh;
+    /* border: 1px solid black; */
+    color: white;
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: 10px;
+}
+
+.head h2 {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 15px;
+}
+
+.choices {
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+    /* flex-wrap: wrap; */
+}
+
+img {
+    margin: 1rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.second,
+.third {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.message {
+    display: inline;
+    color: white;
+    background-color: rgb(11, 0, 73);
+    font-size: 21px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    /* border: 1px solid black; */
+}
+
+img:hover {
+    cursor: grab;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#paper {
+    align-self: self-end;
+}
+
+.choice {
+    /* border: 1px solid black; */
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.white {
+    color: white;
+    font-family: monospace;
+    font-size: 35px;
+}
+
+.two {
+    display: flex;
+    padding: 8px 50px;
+    gap: 4px;
+}
+
+.bg {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.third {
+    font-family: monospace;
+    margin-bottom: 2rem;
+}
+
+.fourth {
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+@media screen and (max-width:431px) {
+
+    .body {
+        background: linear-gradient(150deg, #e93cef, #b7dce8, #ec7daf);
+        height: 100vh;
+    }
+    .fourth{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
