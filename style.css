@@ -141,13 +141,9 @@ img:hover {
     .fourth {
         flex-direction: column;
         gap: 5px;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
-    .choices {
-        height: 300px;
-        gap: 10px;
-    }
 
     .two {
         padding: 8px 35px;
