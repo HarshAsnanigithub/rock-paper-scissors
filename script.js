@@ -21,13 +21,13 @@ const game = (userchoice) => {
         if (userchoice === "rock") {
             if (compchoice === "paper") {
                 // comp wins
-                message.innerText = "Computer Wins, pick again.";
+                message.innerText = "Computer Wins.";
                 compscore.innerText++;
                 message.style.backgroundColor = "#FD5E53";
             }
             else {
                 // user wins
-                message.innerText = "You Win, pick again.";
+                message.innerText = "You Win.";
                 userscore.innerText++;
                 message.style.backgroundColor = "#77DD77";
             }
@@ -35,13 +35,13 @@ const game = (userchoice) => {
         else if (userchoice === "paper") {
             if (compchoice === "scissors") {
                 // comp wins
-                message.innerText = "Computer Wins, pick again.";
+                message.innerText = "Computer Wins.";
                 compscore.innerText++;
                 message.style.backgroundColor = "#FD5E53";
             }
             else {
                 // user wins
-                message.innerText = "You Win, pick again.";
+                message.innerText = "You Win.";
                 userscore.innerText++;
                 message.style.backgroundColor = "#77DD77";
             }
@@ -49,20 +49,20 @@ const game = (userchoice) => {
         else {
             if (compchoice === "rock") {
                 // comp wins
-                message.innerText = "Computer Wins, pick again.";
+                message.innerText = "Computer Wins.";
                 compscore.innerText++;
                 message.style.backgroundColor = "#FD5E53";
             }
             else {
                 // user wins
-                message.innerText = "You Win, pick again.";
+                message.innerText = "You Win.";
                 userscore.innerText++;
                 message.style.backgroundColor = "#77DD77";
             }
         }
     }
-  yourchoice.innerText = `Your choice : ${userchoice}`;
-  cmpchoice.innerText = `Computer choice : ${compchoice}`;
+    yourchoice.innerText = `Your choice : ${userchoice}`;
+    cmpchoice.innerText = `Computer choice : ${compchoice}`;
 };
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
