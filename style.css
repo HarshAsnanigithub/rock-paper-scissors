@@ -40,7 +40,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 4rem;
-    /* flex-wrap: wrap; */
 }
 
 img {
@@ -128,7 +127,6 @@ img:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 2rem;
 }
 
 
@@ -139,10 +137,19 @@ img:hover {
         background: linear-gradient(150deg, #e93cef, #b7dce8, #ec7daf);
         height: 100vh;
     }
-    .fourth{
+
+    .fourth {
         flex-direction: column;
         gap: 5px;
+        margin-top: 4rem;
+    }
+
+    .choices {
+        height: 300px;
+        gap: 10px;
+    }
+
+    .two {
+        padding: 8px 35px;
     }
 }
-
-
